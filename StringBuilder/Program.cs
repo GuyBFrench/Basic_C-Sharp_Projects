@@ -22,9 +22,23 @@ namespace ConsoleApp5
             Console.WriteLine(upperCase);
             Console.ReadLine();
 
-            StringBuilder myString = new StringBuilder();
-            myString.Append("This is a string builder.");
-            Console.WriteLine(myString);
+            StringBuilder sb = new StringBuilder();
+            sb.Append("This is a string builder.");
+            sb.AppendLine();
+
+            sb.Append("It's just for practice so i'm using it");
+            sb.AppendLine();
+
+            sb.Append("to make this basic paragraph.");
+            sb.AppendLine();
+
+            sb.Append("I hope it works correctly.");
+            sb.AppendLine();
+
+            sb.Append("Cause if not that would be not good.");
+            sb.AppendLine();
+
+            Console.WriteLine(sb);
             Console.ReadLine();
         }
     }
