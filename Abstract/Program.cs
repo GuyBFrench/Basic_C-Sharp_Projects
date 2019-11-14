@@ -16,6 +16,11 @@ namespace Abstract
 
             Sample.SayName();
             Console.ReadLine();
+
+            IQuitable quitable = new Employee();
+            quitable.Quit();
+
+            Console.ReadLine();
         }
     }
 }
