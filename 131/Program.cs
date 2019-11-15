@@ -11,24 +11,24 @@ namespace Abstract
         static void Main(string[] args)
         {
             Employee<string> Names = new Employee<string>();
-            
+
             Employee<int> EmployeesId = new Employee<int>();
 
-            Names.things.Add("Benhem");
-            Names.things.Add("Talbot");
-            Names.things.Add("Pete");
-            Names.things.Add("Kate");
 
-            EmployeesId.things.Add(23);
-            EmployeesId.things.Add(22);
-            EmployeesId.things.Add(21);
-            EmployeesId.things.Add(26);
-            
-            foreach (string item in Names.things)
+            EmployeesId.Things.Add(0001);
+            EmployeesId.Things.Add(0002);
+            EmployeesId.Things.Add(0003);
+
+            Names.Things.Add("Benhem");
+            Names.Things.Add("Talbot");
+            Names.Things.Add("Pete");
+            Names.Things.Add("Kate");
+
+            foreach (string item in Names.Things)
             {
                 Console.WriteLine(item);
             }
-            foreach (int item in EmployeesId.things)
+            foreach (int item in EmployeesId.Things)
             {
                 Console.WriteLine(item);
             }
