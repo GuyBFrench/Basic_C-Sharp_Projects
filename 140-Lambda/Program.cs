@@ -10,68 +10,56 @@ namespace _140_Lambda
     {
         static void Main(string[] args)
         {
-            Employee<string> First = new Employee<string>();
-            First.Things = new List<string>();
-            Employee<string> Last = new Employee<string>();
-            Last.Things = new List<string>();
-            Employee<int> Id = new Employee<int>();
-            Id.Things = new List<int>();
-            
-
-            List<string> nameFirst = new List<string>();
-
-
-            Id.Things.Add(1);
-            Id.Things.Add(2);
-            Id.Things.Add(3);
-            Id.Things.Add(4);
-            Id.Things.Add(5);
-            Id.Things.Add(6);
-            Id.Things.Add(7);
-            Id.Things.Add(8);
-            Id.Things.Add(9);
-            Id.Things.Add(10);
-
-            First.Things.Add("Pete");
-            First.Things.Add("Alison");
-            First.Things.Add("Aaron");
-            First.Things.Add("Guy");
-            First.Things.Add("Joe");
-            First.Things.Add("Jacob");
-            First.Things.Add("Emily");
-            First.Things.Add("Joe");
-            First.Things.Add("Elizabeth");
-            First.Things.Add("John");
+            Employee First = new Employee() { Id = 1, firstName = "Pete", lastName = "Johnson" };
+            Employee Second = new Employee() { Id = 2, firstName = "Alison", lastName = "Dalmer" };
+            Employee Third = new Employee() { Id = 3, firstName = "Aaron", lastName = "O'Rielly" };
+            Employee Fourth = new Employee() { Id = 4, firstName = "Guy", lastName = "Andrew" };
+            Employee Fifth = new Employee() { Id = 5, firstName = "Joe", lastName = "Johnson" };
+            Employee Sixth = new Employee() { Id = 6, firstName = "Jacob", lastName = "Ehlers" };
+            Employee Seventh = new Employee() { Id = 7, firstName = "Emily", lastName = "Otea" };
+            Employee Eighth = new Employee() { Id = 8, firstName = "Joe", lastName = "Solana" };
+            Employee Ninth = new Employee() { Id = 9, firstName = "Elizabeth", lastName = "French" };
+            Employee Tenth = new Employee() { Id = 10, firstName = "John", lastName = "Jackson" };
 
 
-            Last.Things.Add("Johnson");
-            Last.Things.Add("Dalmer");
-            Last.Things.Add("O'Rielly");
-            Last.Things.Add("Andrew");
-            Last.Things.Add("Johnson");
-            Last.Things.Add("Ehlers");
-            Last.Things.Add("Otea");
-            Last.Things.Add("Solana");
-            Last.Things.Add("French");
-            Last.Things.Add("Jackson");
+            List<Employee> employees = new List<Employee>() { First, Second, Third, Fourth, Fifth, Sixth, Seventh, Eighth, Ninth, Tenth };
 
-            foreach (string name in First.Things)
+            List<Employee> peoples = new List<Employee>();
+
+
+
+            List<Employee> persons = new List<Employee>();
+
+
+            foreach (Employee person in employees)
             {
-                if (name == "Joe")
+                if (person.firstName == "Joe")
                 {
-                    nameFirst.Add(name);
+                    persons.Add(person);
                 }
-                    
             }
 
-            
-            List<> listId = First.Things.Where(x => x.Id.things > 5);
+            List<Employee> humans = employees.FindAll(x => x.firstName == "Joe");
+
+
+            List<Employee> theList = employees.FindAll(x => x.Id > 5);
+
+
+
+
+
 
             Console.ReadLine();
 
 
 
 
+        }
+        public class Employee
+        {
+            public int Id { get; set; }
+            public string firstName { get; set; }
+            public string lastName { get; set; }
         }
     }
 }
