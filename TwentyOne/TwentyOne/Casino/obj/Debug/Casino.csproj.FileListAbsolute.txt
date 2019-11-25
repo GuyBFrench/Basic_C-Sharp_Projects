@@ -1,0 +1,5 @@
+C:\Users\silve\Documents\GitHub\Basic_C-Sharp_Projects\TwentyOne\TwentyOne\Casino\bin\Debug\Casino.dll
+C:\Users\silve\Documents\GitHub\Basic_C-Sharp_Projects\TwentyOne\TwentyOne\Casino\bin\Debug\Casino.pdb
+C:\Users\silve\Documents\GitHub\Basic_C-Sharp_Projects\TwentyOne\TwentyOne\Casino\obj\Debug\Casino.csprojAssemblyReference.cache
+C:\Users\silve\Documents\GitHub\Basic_C-Sharp_Projects\TwentyOne\TwentyOne\Casino\obj\Debug\Casino.dll
+C:\Users\silve\Documents\GitHub\Basic_C-Sharp_Projects\TwentyOne\TwentyOne\Casino\obj\Debug\Casino.pdb
