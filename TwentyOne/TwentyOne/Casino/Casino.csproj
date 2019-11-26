@@ -30,6 +30,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -44,6 +47,7 @@
     <Compile Include="Card.cs" />
     <Compile Include="Dealer.cs" />
     <Compile Include="Deck.cs" />
+    <Compile Include="FraudException.cs" />
     <Compile Include="Game.cs" />
     <Compile Include="IWalkAway.cs" />
     <Compile Include="Player.cs" />
@@ -53,9 +57,4 @@
     <Compile Include="TwentyOneRules.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <PropertyGroup>
-    <ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>
-      true
-    </ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>
-  </PropertyGroup>
 </Project>

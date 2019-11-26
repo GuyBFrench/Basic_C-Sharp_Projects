@@ -11,3 +11,6 @@ C:\Users\silve\Documents\GitHub\Basic_C-Sharp_Projects\TwentyOne\TwentyOne\Twent
 C:\Users\silve\Documents\GitHub\Basic_C-Sharp_Projects\TwentyOne\TwentyOne\TwentyOne\obj\Debug\TwentyOne.csprojAssemblyReference.cache
 C:\Users\silve\Documents\GitHub\Basic_C-Sharp_Projects\TwentyOne\TwentyOne\TwentyOne\obj\Debug\TwentyOne.exe
 C:\Users\silve\Documents\GitHub\Basic_C-Sharp_Projects\TwentyOne\TwentyOne\TwentyOne\obj\Debug\TwentyOne.pdb
+C:\Users\silve\Documents\GitHub\Basic_C-Sharp_Projects\TwentyOne\TwentyOne\TwentyOne\bin\Debug\Casino.dll
+C:\Users\silve\Documents\GitHub\Basic_C-Sharp_Projects\TwentyOne\TwentyOne\TwentyOne\bin\Debug\Casino.pdb
+C:\Users\silve\Documents\GitHub\Basic_C-Sharp_Projects\TwentyOne\TwentyOne\TwentyOne\obj\Debug\TwentyOne.csproj.CopyComplete
