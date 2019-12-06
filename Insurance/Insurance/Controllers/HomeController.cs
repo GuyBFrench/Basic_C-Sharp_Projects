@@ -1,4 +1,5 @@
 ﻿using Insurance.Models;
+using Insurance.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -88,8 +89,27 @@ namespace Insurance.Controllers
                 
             }
             
-            return View(UserInfoes);
+            return View();
             
+        }
+        public ActionResult Admin()
+        {
+            using (CarInsuranceEntities db = new CarInsuranceEntities())
+            {
+                var userQuotes = db.UserInfoes;
+                var userQuoteVms = new List<UserInfoVm>();
+                foreach (var user in userQuotes)
+                {
+                    var userQuoteVm = new UserInfoVm();
+                    userQuoteVm.Id = user.Id;
+                    userQuoteVm.FirstName = user.FirstName;
+                    userQuoteVm.LastName = user.LastName;
+                    userQuoteVm.EmailAddress = user.EmailAddress;
+                    userQuoteVms.Add(userQuoteVm);
+
+                }
+            }
+            return View(User);
         }
     }
 }
