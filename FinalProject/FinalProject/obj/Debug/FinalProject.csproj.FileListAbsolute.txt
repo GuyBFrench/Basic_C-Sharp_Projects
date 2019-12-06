@@ -1,0 +1,11 @@
+D:\Programming Stuff2\Basic_C-Sharp_Projects\FinalProject\FinalProject\bin\Debug\FinalProject.exe.config
+D:\Programming Stuff2\Basic_C-Sharp_Projects\FinalProject\FinalProject\bin\Debug\FinalProject.exe
+D:\Programming Stuff2\Basic_C-Sharp_Projects\FinalProject\FinalProject\bin\Debug\FinalProject.pdb
+D:\Programming Stuff2\Basic_C-Sharp_Projects\FinalProject\FinalProject\bin\Debug\EntityFramework.dll
+D:\Programming Stuff2\Basic_C-Sharp_Projects\FinalProject\FinalProject\bin\Debug\EntityFramework.SqlServer.dll
+D:\Programming Stuff2\Basic_C-Sharp_Projects\FinalProject\FinalProject\bin\Debug\EntityFramework.xml
+D:\Programming Stuff2\Basic_C-Sharp_Projects\FinalProject\FinalProject\bin\Debug\EntityFramework.SqlServer.xml
+D:\Programming Stuff2\Basic_C-Sharp_Projects\FinalProject\FinalProject\obj\Debug\FinalProject.csprojAssemblyReference.cache
+D:\Programming Stuff2\Basic_C-Sharp_Projects\FinalProject\FinalProject\obj\Debug\FinalProject.csproj.CopyComplete
+D:\Programming Stuff2\Basic_C-Sharp_Projects\FinalProject\FinalProject\obj\Debug\FinalProject.exe
+D:\Programming Stuff2\Basic_C-Sharp_Projects\FinalProject\FinalProject\obj\Debug\FinalProject.pdb
