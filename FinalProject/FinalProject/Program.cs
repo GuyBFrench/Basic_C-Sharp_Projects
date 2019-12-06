@@ -1,4 +1,5 @@
-﻿using System.Data.Entity;
+﻿using System.ComponentModel.DataAnnotations;
+using System.Data.Entity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -35,6 +36,8 @@ namespace FinalProject
         {
             public int BlogId { get; set; }
             public string Name { get; set; }
+            public string Url { get; set; }
+            public virtual List<Post> Posts { get; set; }
 
         }
 
@@ -52,6 +55,14 @@ namespace FinalProject
         {
             public DbSet<Blog> Blogs { get; set; }
             public DbSet<Post> Posts { get; set; }
+            public DbSet<User> Users { get; set; }
+        }
+
+        public class User
+        {
+            [Key]
+            public string Username { get; set; }
+            public string DisplayName { get; set; }
         }
     }
 }

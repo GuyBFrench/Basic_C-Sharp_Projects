@@ -25,5 +25,6 @@ namespace Insurance.Models
         public string UserDUI { get; set; }
         public Nullable<int> SpeedingTickets { get; set; }
         public string Coverage { get; set; }
+        public Nullable<int> Quote { get; set; }
     }
 }

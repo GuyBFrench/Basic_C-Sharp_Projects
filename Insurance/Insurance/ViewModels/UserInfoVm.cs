@@ -18,5 +18,6 @@ namespace Insurance.ViewModels
         public string UserDUI { get; set; }
         public int SpeedingTickets { get; set; }
         public string Coverage { get; set; }
+        public int? Quote { get; set; }
     }
 }

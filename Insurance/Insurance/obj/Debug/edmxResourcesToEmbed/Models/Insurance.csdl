@@ -15,6 +15,7 @@
     <Property Name="UserDUI" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
     <Property Name="SpeedingTickets" Type="Int32" />
     <Property Name="Coverage" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="Quote" Type="Int32" />
   </EntityType>
   <EntityContainer Name="CarInsuranceEntities" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="UserInfoes" EntityType="Self.UserInfo" />

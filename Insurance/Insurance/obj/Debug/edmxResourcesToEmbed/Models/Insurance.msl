@@ -4,6 +4,7 @@
     <EntitySetMapping Name="UserInfoes">
       <EntityTypeMapping TypeName="CarInsuranceModel.UserInfo">
         <MappingFragment StoreEntitySet="UserInfo">
+          <ScalarProperty Name="Quote" ColumnName="Quote" />
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="FirstName" ColumnName="FirstName" />
           <ScalarProperty Name="LastName" ColumnName="LastName" />

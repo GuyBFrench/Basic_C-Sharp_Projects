@@ -9,3 +9,7 @@ D:\Programming Stuff2\Basic_C-Sharp_Projects\FinalProject\FinalProject\obj\Debug
 D:\Programming Stuff2\Basic_C-Sharp_Projects\FinalProject\FinalProject\obj\Debug\FinalProject.csproj.CopyComplete
 D:\Programming Stuff2\Basic_C-Sharp_Projects\FinalProject\FinalProject\obj\Debug\FinalProject.exe
 D:\Programming Stuff2\Basic_C-Sharp_Projects\FinalProject\FinalProject\obj\Debug\FinalProject.pdb
+D:\Programming Stuff2\Basic_C-Sharp_Projects\FinalProject\FinalProject\obj\Debug\FinalProject.Migrations.InitialCreate.resources
+D:\Programming Stuff2\Basic_C-Sharp_Projects\FinalProject\FinalProject\obj\Debug\FinalProject.csproj.GenerateResource.cache
+D:\Programming Stuff2\Basic_C-Sharp_Projects\FinalProject\FinalProject\obj\Debug\FinalProject.Migrations.AddUrl.resources
+D:\Programming Stuff2\Basic_C-Sharp_Projects\FinalProject\FinalProject\obj\Debug\FinalProject.Migrations.AddUser.resources

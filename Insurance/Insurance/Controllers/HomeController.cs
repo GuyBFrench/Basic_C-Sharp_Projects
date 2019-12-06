@@ -14,16 +14,65 @@ namespace Insurance.Controllers
         {
             return View();
         }
+        int Quote = 50;
 
         public ActionResult UserInfo(string FirstName, string LastName, string EmailAddress, int DateOfBirth, int CarYear, string CarMake, string CarModel, string UserDUI, int SpeedingTickets, string Coverage)
         {
-            int userQuote = 50;
+            
             if (string.IsNullOrEmpty(FirstName) || string.IsNullOrEmpty(LastName) || string.IsNullOrEmpty(EmailAddress))
             {
                 return View("~/views/Shared/Error.cshtml");
             }
             else
             {
+                int userAge = 2019 - DateOfBirth;
+                
+
+
+                if (userAge < 25)
+                {
+                    Quote += 25;
+                }
+                if (userAge < 18)
+                {
+                    Quote += 100;
+                }
+                if (userAge > 100)
+                {
+                    Quote += 25;
+                }
+                if (CarYear < 2000)
+                {
+                    Quote += 25;
+                }
+                if (CarYear > 2015)
+                {
+                    Quote += 25;
+                }
+                if (CarMake == "Porsche")
+                {
+                    Quote += 25;
+                }
+                if (CarMake == "Porsche" && CarModel == "Carrera")
+                {
+                    Quote += 25;
+                }
+                if (SpeedingTickets > 0)
+                {
+                    Quote += 10 * SpeedingTickets;
+                }
+                if (UserDUI == "Yes" || UserDUI == "yes")
+                {
+                    int Dui = Quote / 4;
+                    Quote += Dui;
+                }
+                if (Coverage == "Yes" || Coverage == "yes")
+                {
+                    int coverage = Quote / 2;
+                    Quote += coverage;
+                }
+                
+
                 using (CarInsuranceEntities db = new CarInsuranceEntities())
                 {
                     var userinfo = new UserInfo();
@@ -37,59 +86,15 @@ namespace Insurance.Controllers
                     userinfo.UserDUI = UserDUI;
                     userinfo.SpeedingTickets = SpeedingTickets;
                     userinfo.Coverage = Coverage;
+                    userinfo.Quote = Quote;
                     db.UserInfoes.Add(userinfo);
                     db.SaveChanges();
                 }
-                int userAge = 2019 - DateOfBirth;
-
                 
-
-                if (userAge < 25)
-                {
-                    userQuote += 25;
-                }
-                if (userAge < 18)
-                {
-                    userQuote += 100;
-                }
-                if (userAge > 100)
-                {
-                    userQuote += 25;
-                }
-                if (CarYear < 2000)
-                {
-                    userQuote += 25;
-                }
-                if (CarYear > 2015)
-                {
-                    userQuote += 25;
-                }
-                if (CarMake == "Porsche")
-                {
-                    userQuote += 25;
-                }
-                if (CarMake == "Porsche" && CarModel == "Carrera")
-                {
-                    userQuote += 25;
-                }
-                if (SpeedingTickets > 0)
-                {
-                    userQuote += 10 * SpeedingTickets;
-                }
-                if (UserDUI == "Yes" || UserDUI == "yes")
-                {
-                    int Dui = userQuote / 4;
-                    userQuote += Dui;
-                }
-                if (Coverage == "Yes" || Coverage == "yes")
-                {
-                    int coverage = userQuote / 2;
-                    userQuote += coverage;
-                }
                 
             }
             
-            return View();
+            return View("Success");
             
         }
         public ActionResult Admin()
@@ -105,11 +110,13 @@ namespace Insurance.Controllers
                     userQuoteVm.FirstName = user.FirstName;
                     userQuoteVm.LastName = user.LastName;
                     userQuoteVm.EmailAddress = user.EmailAddress;
+                    userQuoteVm.Quote = user.Quote;
                     userQuoteVms.Add(userQuoteVm);
 
                 }
+                return View(userQuoteVms);
             }
-            return View(User);
+            
         }
     }
 }
