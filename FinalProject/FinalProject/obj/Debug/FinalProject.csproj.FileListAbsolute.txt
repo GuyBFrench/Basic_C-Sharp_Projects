@@ -13,3 +13,4 @@ D:\Programming Stuff2\Basic_C-Sharp_Projects\FinalProject\FinalProject\obj\Debug
 D:\Programming Stuff2\Basic_C-Sharp_Projects\FinalProject\FinalProject\obj\Debug\FinalProject.csproj.GenerateResource.cache
 D:\Programming Stuff2\Basic_C-Sharp_Projects\FinalProject\FinalProject\obj\Debug\FinalProject.Migrations.AddUrl.resources
 D:\Programming Stuff2\Basic_C-Sharp_Projects\FinalProject\FinalProject\obj\Debug\FinalProject.Migrations.AddUser.resources
+D:\Programming Stuff2\Basic_C-Sharp_Projects\FinalProject\FinalProject\obj\Debug\FinalProject.Migrations.ChangeDisplayName.resources

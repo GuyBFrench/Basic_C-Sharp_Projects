@@ -27,7 +27,7 @@ namespace FinalProject
                     Console.WriteLine(item.Name);
                 }
 
-                Console.WriteLine("Press any key to exit.");
+                Console.WriteLine("Thank you!");
                 Console.ReadKey();
             }
         }
@@ -56,6 +56,13 @@ namespace FinalProject
             public DbSet<Blog> Blogs { get; set; }
             public DbSet<Post> Posts { get; set; }
             public DbSet<User> Users { get; set; }
+
+            protected override void OnModelCreating(DbModelBuilder modelBuilder)
+            {
+                modelBuilder.Entity<User>()
+                    .Property(u => u.DisplayName)
+                    .HasColumnName("display_name");
+            }
         }
 
         public class User
